@@ -1,0 +1,43 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+// Bootstrap Color Overrides
+$primary: #1F2732;
+$secondary: #A8C28C;
+// $secondary: #E07A5F;
+// $secondary: #251351;
+$accent: #C68786;
+$success: #2ECC71;
+$info: #3498db;
+$warning: #f39c12;
+$danger: #e74c3c;
+$light: #ffffff;
+$dark: #2c3e50;
+
+
+// Alternate Section Background Colors for Smooth Scrolling
+$section-bg-alt-1: #ECEFF1;
+$section-bg-alt-2: #FAFAFA;
+$section-bg-alt-3: #F5F5F5;
+$section-bg-alt-4: #EBEBEB;
+
+
+
+// Custom Typography
+
+// Font Families
+$heading-font: 'Montserrat', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+// Font Weights
+$semi: 600;
+$regular: 400;
+$bold: 700;
+$small-font: 0.875rem;
+$smaller-font: 0.75rem;
+
+$shadow1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$shadow2: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+$border1: 1px solid rgba(0, 0, 0, 0.04);

@@ -1,0 +1,44 @@
+.testmonial_area {
+    .testmonial_item {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: $shadow1;
+        border: $border1;
+
+        .testimonial_img {
+
+            background-color: $secondary;
+            padding: 10px;
+            margin-right: 20px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .testimonial_author {
+
+            span {
+                font-size: $small-font;
+                color: $secondary;
+            }
+        }
+
+
+        .testimonial_text {
+            margin-left: 20px;
+        }
+    }
+
+    .testmonial_cta {
+        text-align: center;
+        margin-top: 30px;
+    }
+}

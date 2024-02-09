@@ -1,0 +1,21 @@
+//hero section style
+.home-hero {
+    background-color: $section-bg-alt-2;
+
+    .home-hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+            margin-top: 20px;
+            align-self: flex-start;
+        }
+    }
+
+    .hero-img {
+        img {
+            object-fit: contain;
+        }
+    }
+}

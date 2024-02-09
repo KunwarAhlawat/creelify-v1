@@ -1,0 +1,32 @@
+.our_work_area {
+    .nav {
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .nav-item {
+            button {
+                border-radius: 0;
+                margin: 0px 20px 0px 0px;
+                color: $dark;
+                border: 0;
+
+                &:hover {
+                    background-color: $secondary;
+                    color: $light;
+                }
+
+                &.active {
+                    border: 0;
+                    background-color: $secondary;
+                    color: $light;
+
+                }
+            }
+        }
+
+
+    }
+}

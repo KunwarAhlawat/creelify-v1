@@ -1,0 +1,13 @@
+//contact hero style
+.page-hero-section {
+    background-color: $primary;
+
+    .page-hero-content {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
