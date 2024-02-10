@@ -274,76 +274,41 @@ ul {
   color: #2c3e50;
 }
 
-.service_bg_1 {
-  background-image: url(/images/services/Company\ Registraion.webp);
-}
-
-.service_bg_2 {
-  background-image: url(/images/services/Financial\ Planning.webp);
-}
-
-.service_bg_3 {
-  background-image: url(/images/services/FSSAI.webp);
-}
-
-.service_area .single_service {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 250px;
-  background-position: center;
-  overflow: hidden;
-}
-.service_area .single_service .service_hover {
-  text-align: center;
-  height: 100%;
-  background: RGBA(52, 152, 219, 0.05);
-  transition: 0.5s;
+.service-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-radius: 10px;
+  padding: 40px 0px 0px 30px;
+  min-height: 380px;
 }
-.service_area .single_service .service_hover h3 {
-  color: #ffffff;
-  margin-bottom: 0;
-}
-.service_area .single_service .service_hover .hover_content {
+.service-card::after {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  display: table;
   width: 100%;
   height: 100%;
-  background: #A8C28C;
-  transform: translate(40%);
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
+  background-image: url("https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/service-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.6);
 }
-.service_area .single_service .service_hover .hover_content .hover_content_inner {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding: 0px 10px;
+.service-card .service-icon {
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  z-index: 1;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 50%;
 }
-.service_area .single_service .service_hover .hover_content .hover_content_inner h4 {
+.service-card .service-icon img {
+  height: 40px;
+  width: 40px;
+}
+.service-card .service-content {
+  position: relative;
+  z-index: 1;
   color: #ffffff;
-}
-.service_area .single_service .service_hover .hover_content .hover_content_inner p {
-  color: #ffffff;
-}
-.service_area .single_service:hover {
-  background-position: top;
-}
-.service_area .single_service:hover .hover_content {
-  transform: translate(0%);
-  opacity: 1;
-  visibility: visible;
-}
-.service_area .single_service:hover .service_hover {
-  background: #2c3e50;
 }
 
 .counter_area .single_counter {
@@ -470,15 +435,42 @@ ul {
 .faq_area .accordion-item .accordion-header button::after {
   background-image: url(/icons/chevron-down.svg);
 }
-.page-hero-section {
-  background-color: #1F2732;
+.page-hero {
+  position: relative;
+  padding: 150px 0px;
+  background-image: url("https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/page-title.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.page-hero-section .page-hero-content {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.page-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.page-hero .hero-text {
+  position: relative;
+  color: #ffffff;
+  z-index: 1;
+}
+.page-hero .hero-text span {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+.page-hero .hero-text .breadcrumbs {
+  margin-top: 20px;
+}
+.page-hero .hero-text .breadcrumbs span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.page-hero .hero-text .breadcrumbs span:nth-child(3) {
+  color: #A8C28C;
 }
 
 .header-style1 .top-bar {

@@ -1,13 +1,48 @@
 //contact hero style
-.page-hero-section {
-    background-color: $primary;
+.page-hero {
+    position: relative;
+    padding: 150px 0px;
+    background-image: url("https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/page-title.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    .page-hero-content {
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-text {
+        position: relative;
+        color: $light;
+        z-index: 1;
+
+        span {
+            font-size: 4rem;
+            font-weight: $bold;
+            line-height: 100%;
+
+        }
+
+        .breadcrumbs {
+            margin-top: 20px;
+
+            span {
+                font-size: 1.5rem;
+                font-weight: $bold;
+
+                &:nth-child(3) {
+                    color: $secondary;
+                }
+            }
+        }
 
     }
+
 }
