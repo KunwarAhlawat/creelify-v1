@@ -1,0 +1,80 @@
+@keyframes pulsey {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
+
+.stat-area {
+    position: relative;
+    background-image: url(https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/bg-01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    /* Example height for demonstration */
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* Ensure overlay covers the entire container */
+        height: 100%;
+        /* Ensure overlay covers the entire container */
+        background-color: rgba(0, 0, 0, 0.24);
+    }
+
+    .counter-area {
+        position: absolute;
+        z-index: 1;
+        margin-top: 20px;
+        width: 80%;
+        bottom: -10%;
+        background-color: $light;
+        padding: 40px 0px;
+
+        .counter-style-1 {
+            position: relative;
+            // padding: 4px 30px;
+            border-right: 1px solid black;
+
+            span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                line-height: 100%;
+
+                &:nth-child(1) {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                }
+
+                &:nth-child(2) {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                &:nth-child(3) {
+                    position: absolute;
+                    content: '';
+                    height: 7px;
+                    width: 7px;
+                    border-radius: 50px;
+                    background-color: #ff497c;
+                    right: -4px;
+                    left: auto;
+                    bottom: -20px;
+                    animation: pulsey 5s ease infinite alternate;
+                }
+            }
+        }
+    }
+}

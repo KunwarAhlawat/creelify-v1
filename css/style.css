@@ -328,21 +328,49 @@
   clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
 
-.faq_area .accordion-item {
-  margin-bottom: 10px;
-  border: 0;
-  border-radius: 0;
+.faq-area .faq-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.faq_area .accordion-item .accordion-header button {
+.faq-area .faq-text .accordion-item {
+  margin-bottom: 20px;
   border: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+.faq-area .faq-text .accordion-item .accordion-header button {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 20px;
   box-shadow: none;
-  border-radius: 0;
-  background-color: #A8C28C;
-  color: #ffffff;
 }
-.faq_area .accordion-item .accordion-header button::after {
-  background-image: url(/icons/chevron-down.svg);
+.faq-area .faq-img {
+  height: 550px;
+  width: 100%;
+  text-align: end;
+  position: relative;
 }
+.faq-area .faq-img img {
+  height: 100%;
+  width: 80%;
+  object-fit: cover;
+}
+.faq-area .faq-img .faq-img-2 {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  width: 70%;
+  height: 70%;
+}
+.faq-area .faq-img .faq-img-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .page-hero {
   position: relative;
   padding: 150px 0px;
@@ -473,6 +501,77 @@
 }
 .about-area .about-text button {
   align-self: flex-start;
+}
+
+@keyframes pulsey {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+}
+.stat-area {
+  position: relative;
+  background-image: url(https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/bg-01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  /* Example height for demonstration */
+}
+.stat-area::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Ensure overlay covers the entire container */
+  height: 100%;
+  /* Ensure overlay covers the entire container */
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.stat-area .counter-area {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  width: 80%;
+  bottom: -10%;
+  background-color: #ffffff;
+  padding: 40px 0px;
+}
+.stat-area .counter-area .counter-style-1 {
+  position: relative;
+  border-right: 1px solid black;
+}
+.stat-area .counter-area .counter-style-1 span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 100%;
+}
+.stat-area .counter-area .counter-style-1 span:nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.stat-area .counter-area .counter-style-1 span:nth-child(2) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.stat-area .counter-area .counter-style-1 span:nth-child(3) {
+  position: absolute;
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50px;
+  background-color: #ff497c;
+  right: -4px;
+  left: auto;
+  bottom: -20px;
+  animation: pulsey 5s ease infinite alternate;
 }
 
 .header-style1 .top-bar {
