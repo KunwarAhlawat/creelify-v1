@@ -1,0 +1,52 @@
+.about-page-area{
+    position: relative;
+    background-image: url(https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/bg-02.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .about-page-text{  
+   position: absolute;
+   top:0; 
+    z-index: 1;
+ 
+    color: $light;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        margin: 20px 0px;
+    }
+   
+    }
+
+    .service-box{ 
+    
+        .service-box-item{
+            position: relative;
+            text-align: center;
+            color: $light;
+           z-index: 1;
+           padding: 26px;
+        
+            img{
+                margin-bottom: 10px;
+            }   
+        }
+        .d-box{
+            background-color: rgba(180, 136, 136, 0.692);
+        }
+        
+    }
+
+}

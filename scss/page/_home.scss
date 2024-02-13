@@ -1,21 +1,43 @@
-//hero section style
 .home-hero {
-    background-color: $section-bg-alt-2;
-
-    .home-hero-content {
-        display: flex;
+    position: relative; 
+    background-image: url("https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/slide-03.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
+    &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.37);
+    }
+  
+    .home-hero-text{
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        display:flex;
         flex-direction: column;
         justify-content: center;
-
-        a {
-            margin-top: 20px;
-            align-self: flex-start;
-        }
-    }
-
-    .hero-img {
-        img {
-            object-fit: contain;
+        align-items: center;
+        color: $light;
+        span{
+            display: block;
+            line-height: 100%;
+            &:nth-child(1){
+                font-size: 1rem;
+                font-weight: bold; /* Assuming $bold is defined elsewhere */
+            }
+            &:nth-child(2){
+                text-align: center;
+                font-size: 6rem;
+                font-weight: bold; /* Assuming $bold is defined elsewhere */
+            }
         }
     }
 }
