@@ -1,112 +1,35 @@
-//contact information style
-.contact-information-section {
-    background-color: $section-bg-alt-2;
+.contact-area{
+    .contact-form{
 
-    .contact-information-item {
-        // background-color: $secondary
-        margin: 10px;
-        box-shadow: $shadow1;
-        border: $border1;
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-        padding: 20px;
+    }
+    .contact-info{
+        .contact-info-item{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            padding: 20px;
+            .contact-icon{
+             background-color: $primary;
+             color: $light;
+             i{
+                padding: 16px;
+                font-size: 1.5rem;
+             }
+            }
+            .contact-text{
+                margin-left: 20px;
+             span{
+                font-size: 1.2rem;
+                display: block;
+                margin-bottom: 8px;
 
-        i {
-            font-size: 40px;
-            margin-right: 20px;
-            color: $info;
-        }
-
-        p {}
-
-        h5 {
-            font-weight: $bold;
-            color: $secondary;
-            margin-bottom: 10px;
-
+                }
+               a{
+                display: block;
+                font-size: $small-font;
+               }
+            
         }
     }
 }
-
-//contact form style
-.contact-form-section {
-
-    background-color: $section-bg-alt-3;
-
-
-
-}
-
-//contact location style
-.contact-location-section {
-
-    .contact-item {
-        height: 300px;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        h4 {
-
-
-            color: $light;
-        }
-
-        i {
-            font-size: 40px;
-            color: $light;
-
-        }
-
-        p {
-            color: $light;
-        }
-
-        a {
-            border: 1px solid $light;
-            padding: 4px 12px;
-            color: $light;
-            font-weight: $bold;
-            text-align: center;
-
-            &:hover {
-                color: $secondary;
-                border: 1px solid $secondary;
-            }
-        }
-
-
-    }
-
-    .item-1 {
-        background-color: $primary;
-        color: $light;
-    }
-
-    .item-2 {
-        background-color: $dark;
-        color: $light;
-    }
-
-    .item-3 {
-        background-color: $secondary;
-
-        a {
-
-            border: 1px solid $light;
-            padding: 4px 12px;
-            color: $light;
-            font-weight: $bold;
-            text-align: center;
-
-            &:hover {
-                color: $primary;
-                border: 1px solid $primary;
-
-            }
-        }
-
-    }
 }

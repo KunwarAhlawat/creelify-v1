@@ -1,15 +1,3 @@
-@keyframes pulsey {
-    from {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    to {
-        transform: scale(1.2);
-        opacity: 0.5;
-    }
-}
-
 .stat-area {
     position: relative;
     background-image: url(https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/bg-01.jpg);
@@ -28,52 +16,40 @@
         /* Ensure overlay covers the entire container */
         height: 100%;
         /* Ensure overlay covers the entire container */
-        background-color: rgba(0, 0, 0, 0.24);
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .stat-text {
+        position: relative;
+        z-index: 1;
+        color: $light;
+
+        h6 {
+            color: $light;
+            border-bottom: 2px solid $light;
+        }
     }
 
     .counter-area {
-        position: absolute;
+        position: relative;
         z-index: 1;
-        margin-top: 20px;
-        width: 80%;
-        bottom: -10%;
+        width: 100%;
+        bottom: -20%;
         background-color: $light;
         padding: 40px 0px;
 
-        .counter-style-1 {
-            position: relative;
-            // padding: 4px 30px;
-            border-right: 1px solid black;
+        .counter-item {
+            text-align: center;
 
             span {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                line-height: 100%;
+                font-size: 3rem;
+                font-weight: bold;
+                color: $accent;
+            }
 
-                &:nth-child(1) {
-                    font-size: 2rem;
-                    font-weight: bold;
-                    padding-bottom: 10px;
-                }
-
-                &:nth-child(2) {
-                    font-size: 1rem;
-                    font-weight: bold;
-                }
-
-                &:nth-child(3) {
-                    position: absolute;
-                    content: '';
-                    height: 7px;
-                    width: 7px;
-                    border-radius: 50px;
-                    background-color: #ff497c;
-                    right: -4px;
-                    left: auto;
-                    bottom: -20px;
-                    animation: pulsey 5s ease infinite alternate;
-                }
+            p {
+                text-align: center;
+                font-weight: $bold;
             }
         }
     }

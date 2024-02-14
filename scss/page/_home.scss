@@ -1,21 +1,117 @@
-//hero section style
+//hero style
 .home-hero {
-    background-color: $section-bg-alt-2;
+    position: relative;
+    background-image: url("https://flywebwp.websitelayout.net/wp-content/uploads/2023/09/slide-03.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 
-    .home-hero-content {
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.37);
+    }
+
+    .home-hero-text {
+        position: relative;
+        z-index: 1;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        color: $light;
 
-        a {
-            margin-top: 20px;
-            align-self: flex-start;
+        span {
+            display: block;
+            line-height: 100%;
+
+            &:nth-child(1) {
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+                /* Assuming $bold is defined elsewhere */
+            }
+
+            &:nth-child(2) {
+                text-align: center;
+                font-size: 9rem;
+                font-weight: 800;
+                /* Assuming $bold is defined elsewhere */
+            }
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 20px 40px;
+            font-size: 1.2rem;
         }
     }
 
-    .hero-img {
-        img {
-            object-fit: contain;
+    // Media query for tablets (portrait and landscape)
+    @media only screen and (min-width: 600px) and (max-width: 1024px) {
+        .home-hero-text {
+            span {
+                display: block;
+                line-height: 100%;
+
+                &:nth-child(1) {
+                    font-size: calc(1.5rem*0.7);
+                    letter-spacing: 2px;
+                    /* Assuming $bold is defined elsewhere */
+                }
+
+                &:nth-child(2) {
+                    text-align: center;
+                    font-size: calc(9rem*0.7);
+                    font-weight: 800;
+                    /* Assuming $bold is defined elsewhere */
+                }
+            }
+
+            button {
+                margin-top: 40px;
+                padding: 20px 40px;
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+
+    // Media query for mobile devices
+    @media only screen and (max-width: 599px) {
+        .home-hero-text {
+            span {
+                display: block;
+                line-height: 100%;
+
+                &:nth-child(1) {
+                    font-size: calc(1.5rem*0.5);
+                    letter-spacing: 2px;
+                    /* Assuming $bold is defined elsewhere */
+                }
+
+                &:nth-child(2) {
+                    text-align: center;
+                    font-size: calc(9rem*0.5);
+                    font-weight: 800;
+                    /* Assuming $bold is defined elsewhere */
+                }
+            }
+
+            button {
+                margin-top: 40px;
+                padding: 20px 40px;
+                font-size: 1.2rem;
+            }
         }
     }
 }

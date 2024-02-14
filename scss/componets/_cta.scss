@@ -1,9 +1,7 @@
 //cta style
 
-.cta_area {
+.cta-area {
     position: relative;
-    /* Set position to relative for proper stacking of elements */
-
     /* Background properties */
     background-image: url("https://indiataxfile.com/wp-content/uploads/2024/01/indiataxfile-cta.webp");
     background-position: center;
@@ -26,22 +24,32 @@
     }
 
 
-    .cta-content {
+    .cta-text {
         position: relative;
         z-index: 2;
         color: $light;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
 
-        p {
-            margin: 20px 0px;
-
+        h6 {
+            border-bottom: 3px solid $light;
+            width: max-content;
+            margin-bottom: 10px;
         }
 
-        a {
-            &:hover {
-                background-color: $light;
-                color: $dark;
-            }
+        h2 {}
+
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            margin-top: 30px;
         }
+
+
     }
 }

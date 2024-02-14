@@ -1,19 +1,15 @@
-// Use this file to overwrite the basic Bootstrap variables and add your own variables
-// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
-// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-// Bootstrap Color Overrides
+$font-mulish: 'Mulish', sans-serif;
 $primary: #1F2732;
 $secondary: #A8C28C;
-// $secondary: #E07A5F;
-// $secondary: #251351;
-$accent: #C68786;
+$accent: #FF497C;
 $success: #2ECC71;
 $info: #3498db;
 $warning: #f39c12;
 $danger: #e74c3c;
 $light: #ffffff;
-$dark: #2c3e50;
+$dark: #42545e !important;
 
 
 // Alternate Section Background Colors for Smooth Scrolling
@@ -27,13 +23,14 @@ $section-bg-alt-4: #EBEBEB;
 // Custom Typography
 
 // Font Families
-$heading-font: 'Montserrat', sans-serif;
-$body-font: 'Open Sans', sans-serif;
+$heading-font: $font-mulish;
+$body-font: $font-mulish;
 
 // Font Weights
 $semi: 600;
 $regular: 400;
 $bold: 700;
+$bolder: 900;
 $small-font: 0.875rem;
 $smaller-font: 0.75rem;
 

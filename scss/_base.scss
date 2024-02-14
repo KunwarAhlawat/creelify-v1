@@ -14,191 +14,76 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span,
+ul,
+li,
+a {
     font-family: $heading-font;
     margin: 0px;
     line-height: 120%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: $bold;
 }
 
 h1 {
-    font-size: 2.027rem;
+    font-size: 2.986rem;
 }
-
-// Media query for tablets (portrait and landscape)
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-
-    h1 {
-        font-size: 1.824rem;
-
-    }
-
-}
-
-// Media query for mobile devices
-@media only screen and (max-width: 599px) {
-    h1 {
-        font-size: 1.621rem;
-    }
-
-}
-
-
-
 
 
 h2 {
-    font-size: 1.802rem;
+    font-size: 2.488rem;
 }
-
-// Media query for tablets (portrait and landscape)
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-//     h2 {
-//         font-size: 1.621rem;
-//     }
-// }
-
-// // Media query for mobile devices
-// @media only screen and (max-width: 599px) {
-//     h2 {
-//         font-size: 1.441rem;
-//     }
-// }
-
-
 
 
 h3 {
-    font-size: 1.602rem;
+    font-size: 2.074rem;
 }
 
-// Media query for tablets (portrait and landscape)
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-//     h3 {
-//         font-size: 1.441rem;
-//     }
-// }
-
-// // Media query for mobile devices
-// @media only screen and (max-width: 599px) {
-//     h3 {
-//         font-size: 1.281rem;
-//     }
-// }
 
 
 h4 {
-    font-size: 1.424rem;
+    font-size: 1.728rem;
 }
-
-// // Media query for tablets (portrait and landscape)
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-//     h4 {
-//         font-size: 1.281rem;
-//     }
-// }
-
-// // Media query for mobile devices
-// @media only screen and (max-width: 599px) {
-//     h4 {
-//         font-size: 1.139rem;
-//     }
-// }
 
 
 h5 {
-    font-size: 1.266rem;
+    font-size: 1.44rem;
 }
-
-// // Media query for tablets (portrait and landscape)
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-//     h5 {
-//         font-size: 1.139rem;
-//     }
-// }
-
-// // Media query for mobile devices
-// @media only screen and (max-width: 599px) {
-//     h5 {
-//         font-size: 1.012rem;
-//     }
-// }
 
 h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
-
-// Media query for tablets (portrait and landscape)
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-//     h6 {
-//         font-size: 0.9rem;
-//     }
-// }
-
-// // Media query for mobile devices
-// @media only screen and (max-width: 599px) {
-//     h6 {
-//         font-size: 0.8rem;
-//     }
-// }
 
 
 a {
-    // font-size: 1rem;
     line-height: 100%;
-    font-weight: $bold;
-
     text-decoration: none;
-    outline: none;
     cursor: pointer;
 
 }
 
-// // Media query for tablets (portrait and landscape)
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-//     a {
-//         // font-size: 0.9rem;
-//     }
-// }
-
-// // Media query for mobile devices
-// @media only screen and (max-width: 599px) {
-//     a {
-//         // font-size: 0.8rem;
-//     }
-// }
-
 
 p {
-    display: block;
-    font-size: 1rem;
-    line-height: 160%;
-    margin-bottom: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
     letter-spacing: 0.5px;
-
 }
 
-// Media query for tablets (portrait and landscape)
-// @media only screen and (min-width: 600px) and (max-width: 1024px) {
-//     p {
-//         font-size: 0.9rem;
-//     }
-// }
-
-// // Media query for mobile devices
-// @media only screen and (max-width: 599px) {
-//     p {
-//         font-size: 0.8rem;
-//     }
-// }
-
-
-.container-fluid {
-    // margin: 0px;
-    // padding: 0px;
-}
 
 ul {
     margin: 0px;
     padding: 0px;
+}
+
+span {
+    line-height: 100%;
 }

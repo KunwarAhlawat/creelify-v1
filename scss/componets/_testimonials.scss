@@ -1,4 +1,6 @@
 .testimonial-area {
+    padding: 150px 0px 100px 0px;
+
     .testimonial-item {
         position: relative;
         height: 350px;
@@ -51,4 +53,18 @@
         }
     }
 
+}
+
+// Media query for tablets (portrait and landscape)
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .testimonial-area {
+        padding: 300px 0px 100px 0px;
+    }
+}
+
+// Media query for mobile devices
+@media only screen and (max-width: 800px) {
+    .testimonial-area {
+        padding: 600px 0px 100px 0px;
+    }
 }

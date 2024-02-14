@@ -11,8 +11,8 @@
     border-radius: 0;
 
     &:hover {
-        background-color: $primary;
-        color: $light;
+        background-color: $light;
+        color: $dark;
     }
 
 }
@@ -52,30 +52,13 @@
     border-radius: 0;
 
     &:hover {
-        background-color: $secondary;
+        background-color: $accent;
         color: $light;
     }
 
 }
 
-.btn-secondary {
-    background-color: $secondary;
-    color: $light;
-    font-size: $small-font;
-    // border: 2px solid $light;
-    text-transform: uppercase;
-    font-weight: $bold;
-    padding: 10px 20px;
-    display: inline-block;
-    transition: all 0.3s;
-    border-radius: 0;
 
-    &:hover {
-        background-color: $primary;
-        color: $light;
-        border: 2px solid $primary;
-    }
-}
 
 .btn-outline {
     background-color: transparent;
@@ -94,12 +77,4 @@
         color: $light;
         border: 2px solid $primary;
     }
-}
-
-
-
-.btn-grp {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }

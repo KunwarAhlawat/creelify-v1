@@ -1,28 +1,37 @@
 .faq-area {
     .faq-text {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        h6 {
+            color: $accent;
+            border-bottom: 3px solid $accent;
+            width: max-content;
+            margin-bottom: 10px;
+        }
 
-        .accordion-item {
-            margin-bottom: 20px;
-            border: 0;
-            box-shadow: $shadow1;
-            border-radius: 10px;
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
 
-            .accordion-header {
-                button {
-                    background-color: $light;
-                    padding: 10px 20px;
-                    border: 0;
-                    border-radius: 20px;
-                    box-shadow: none;
+    .accordion-item {
+        margin-bottom: 20px;
+        border: 0;
+        box-shadow: $shadow1;
+        border-radius: 10px;
 
-                }
+        .accordion-header {
+            button {
+                background-color: $light;
+                padding: 10px 20px;
+                border: 0;
+                border-radius: 20px;
+                box-shadow: none;
+                font-size: 1.2rem;
+                font-weight: $bold;
+
             }
         }
     }
+
 
     .faq-img {
         height: 550px;

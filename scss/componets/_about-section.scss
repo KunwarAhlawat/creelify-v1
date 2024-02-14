@@ -1,6 +1,5 @@
+//about style
 .about-area {
-
-
     .about-img {
         position: relative;
         width: 100%;
@@ -8,14 +7,13 @@
         flex-direction: row;
         align-items: center;
         justify-content: start;
+        border-radius: 10px;
 
         img {
-
             width: 50%;
             // height: 500px;
             padding: 10px;
             object-fit: cover;
-            border-radius: 10px;
 
             &:nth-child(1) {
                 padding-bottom: 120px;
@@ -61,6 +59,14 @@
         flex-direction: column;
         justify-content: center;
 
+
+        h6 {
+            color: $accent;
+            border-bottom: 3px solid $accent;
+            width: max-content;
+            margin-bottom: 10px;
+        }
+
         p {
             margin-top: 10px;
         }
@@ -81,6 +87,7 @@
         }
 
         button {
+            margin-top: 30px;
             align-self: flex-start;
         }
     }
