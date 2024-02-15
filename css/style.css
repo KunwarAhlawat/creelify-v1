@@ -57,9 +57,12 @@ h6 {
 }
 
 a {
+  font-size: 1rem;
+  display: blocks;
   line-height: 100%;
   text-decoration: none;
   cursor: pointer;
+  color: #FF497C;
 }
 
 p {
@@ -584,24 +587,41 @@ span {
 
 .work-card {
   text-align: center;
+  position: relative; /* Added this line */
+  overflow: hidden; /* Added this line */
+  transition: transform 0.1s ease;
+  margin: 20px;
+  cursor: pointer;
 }
 .work-card .work-img {
   height: 300px;
   width: 100%;
 }
 .work-card .work-img img {
-  height: 100%;
-  width: 100%;
+  height: 100%; /* Changed to 100% */
+  width: 100%; /* Changed to 100% */
   object-fit: cover;
   border-radius: 5px;
+  transition: transform 0.1s ease; /* Added this line */
 }
-.work-card h3 {
-  margin-top: 10px;
+.work-card h5 {
+  margin-top: 16px;
 }
 .work-card span {
   font-size: 1rem;
-  font-weight: 700;
-  color: #A8C28C;
+  font-weight: bold; /* Assuming $bold is a variable, use 'bold' directly */
+  color: #A8C28C; /* Assuming $secondary is a variable */
+}
+.work-card:hover {
+  transform: scale(1.1); /* This will scale the whole .work-img container */
+}
+.work-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .header-style1 .top-bar {
@@ -856,15 +876,28 @@ span {
   }
 }
 
+.contact-area .contact-info {
+  width: max-content;
+  background-color: #1F2732;
+  color: #ffffff;
+  padding: 40px 30px;
+  margin: 0px auto;
+}
+.contact-area .contact-info h6 {
+  border-bottom: 3px solid #ffffff;
+  width: max-content;
+  margin-bottom: 10px;
+}
 .contact-area .contact-info .contact-info-item {
+  padding: 40px 20px 20px 20px;
   display: flex;
   flex-direction: row;
   align-items: start;
-  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4941176471);
 }
 .contact-area .contact-info .contact-info-item .contact-icon {
-  background-color: #1F2732;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #42545e !important;
 }
 .contact-area .contact-info .contact-info-item .contact-icon i {
   padding: 16px;
@@ -876,11 +909,13 @@ span {
 .contact-area .contact-info .contact-info-item .contact-text span {
   font-size: 1.2rem;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 .contact-area .contact-info .contact-info-item .contact-text a {
   display: block;
   font-size: 0.875rem;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 .blog-section {
@@ -910,29 +945,6 @@ span {
 }
 .blog-section .blog-item .blog-text p {
   margin-top: 10px;
-}
-
-.our_work_area .nav {
-  border: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.our_work_area .nav .nav-item button {
-  border-radius: 0;
-  margin: 0px 20px 0px 0px;
-  color: #42545e !important;
-  border: 0;
-}
-.our_work_area .nav .nav-item button:hover {
-  background-color: #A8C28C;
-  color: #ffffff;
-}
-.our_work_area .nav .nav-item button.active {
-  border: 0;
-  background-color: #A8C28C;
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

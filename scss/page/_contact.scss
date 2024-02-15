@@ -3,14 +3,27 @@
 
     }
     .contact-info{
+        width: max-content;
+        background-color: $primary;
+        color:$light;
+        padding: 40px 30px;
+        margin: 0px auto;
+        
+        
+    h6 {
+        border-bottom: 3px solid $light;
+        width: max-content;
+        margin-bottom: 10px;
+    }
         .contact-info-item{
+            padding: 40px 20px 20px 20px;
             display: flex;
             flex-direction: row;
             align-items: start;
-            padding: 20px;
+             border-bottom: 1px solid #ffffff7e;
             .contact-icon{
-             background-color: $primary;
-             color: $light;
+             background-color: $light;
+             color: $dark;
              i{
                 padding: 16px;
                 font-size: 1.5rem;
@@ -21,12 +34,14 @@
              span{
                 font-size: 1.2rem;
                 display: block;
-                margin-bottom: 8px;
-
+                margin-bottom: 12px;
+                
                 }
                a{
                 display: block;
                 font-size: $small-font;
+                color: $light;
+                font-size: 1.2rem;
                }
             
         }

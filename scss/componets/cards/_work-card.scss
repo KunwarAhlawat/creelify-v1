@@ -1,21 +1,45 @@
-.work-card{
+.work-card {
     text-align: center;
-    .work-img{
-    height: 300px;
-    width: 100%;
-    img{
+    position: relative; /* Added this line */
+    overflow: hidden; /* Added this line */
+    transition: transform 0.1s ease;
+    margin: 20px;
+    cursor: pointer;
+    .work-img {
+        height: 300px;
+        width: 100%;
+      
+
+        img {
+            height: 100%; /* Changed to 100% */
+            width: 100%; /* Changed to 100% */
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.1s ease; /* Added this line */
+        }
+
+       
+    }
+
+    h5 {
+        margin-top: 16px;
+    }
+
+    span {
+        font-size: 1rem;
+        font-weight: bold; /* Assuming $bold is a variable, use 'bold' directly */
+        color: $secondary; /* Assuming $secondary is a variable */
+    }
+    &:hover {
+        transform: scale(1.1); /* This will scale the whole .work-img container */
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
         height: 100%;
         width: 100%;
-        object-fit: cover;
-        border-radius: 5px;
     }
-    }
-   h3{
-    margin-top: 10px;
-   }
-   span{
-    font-size: 1rem;
-    font-weight: $bold;
-    color: $secondary;
-   }
 }
